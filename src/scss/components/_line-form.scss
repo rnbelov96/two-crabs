@@ -1,0 +1,149 @@
+.line-form {
+  @include x-align;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 1200px;
+  position: relative;
+  top: 84px;
+
+  @media (max-width: 1220px) {
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 410px;
+  }
+
+  &_desc {
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+}
+
+.line-form__wrapper {
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.08);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: 650px) {
+    padding: 15px;
+  }
+}
+
+.line-form__bg {
+  position: absolute;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  @include central-align;
+  background: #ffffff;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.line-form__title {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (max-width: 650px) {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+.line-form__content {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-right: 64px;
+  margin-bottom: 24px;
+  position: relative;
+
+  @media (max-width: 1150px) {
+    content: '';
+    padding-right: 0;
+  }
+
+  @media (max-width: 1070px) {
+    flex-direction: column;
+  }
+
+  &::after {
+    content: url('/src/img/book.png');
+    position: absolute;
+    z-index: -1;
+    right: -4px;
+    top: -47px;
+
+    @media (max-width: 1150px) {
+      content: '';
+    }
+  }
+}
+
+.line-form__input-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 24px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.line-form__input-box {
+  width: 100%;
+  max-width: 230px;
+  position: relative;
+}
+
+.line-form__input {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  padding-bottom: 8px;
+  padding-left: 38px;
+  border-bottom: 1px solid #e4e4e4;
+  width: 100%;
+
+  &::-webkit-input-placeholder {
+    color: #909090;
+    font-style: italic;
+  }
+
+  &::-moz-placeholder {
+    color: #909090;
+    font-style: italic;
+  }
+
+  &:-ms-input-placeholder {
+    color: #909090;
+    font-style: italic;
+  }
+
+  &:-moz-placeholder {
+    color: #909090;
+    font-style: italic;
+  }
+}
+
+.line-form__policy {
+  text-align: center;
+  margin-bottom: 0;
+  color: #909090;
+  font-size: 12px;
+
+  @media (max-width: 650px) {
+    font-size: 12px !important;
+  }
+
+  span {
+    cursor: pointer;
+  }
+}

@@ -1,10 +1,16 @@
-html p, li {
+*:focus {
+  outline: none;
+}
+
+html p,
+li {
   @media (max-width: 650px) {
     font-size: 16px !important;
   }
 }
 
-html h1, h2 {
+html h1,
+h2 {
   @media (max-width: 650px) {
     font-size: 22px !important;
   }

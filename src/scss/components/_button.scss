@@ -28,6 +28,10 @@
     }
   }
 
+  &_line-form {
+    max-width: 310px;
+  }
+
   &:hover {
     background: linear-gradient(180deg, #c0f0ff 0%, #30a8ff 100%);
   }
