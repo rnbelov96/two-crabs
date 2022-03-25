@@ -12,9 +12,10 @@ html h1, h2 {
 
 body {
   background-color: white;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  line-height: normal;
+  color: $black;
+  font-family: 'Helios', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 main {

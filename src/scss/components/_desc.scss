@@ -1,0 +1,158 @@
+.desc {
+  min-height: 940px;
+  @include bg;
+  background-image: url('/src/img/bgs/desc.jpg');
+}
+
+.desc__title {
+  @include title;
+  margin-top: 61px;
+  margin-bottom: 0;
+
+  @media (max-width: 650px) {
+    margin-top: 10px;
+  }
+}
+
+.desc__subtitle {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 24px;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+
+  span {
+    background-color: $dark-yellow;
+  }
+
+  @include mobile-mb(20px);
+
+  @media (max-width: 1150px) {
+    font-size: 35px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 19px !important;
+    margin-bottom: 0;
+  }
+}
+
+.desc__text {
+  max-width: 778px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
+  font-size: 20px;
+  text-align: center;
+
+  b {
+    font-size: 26px;
+    font-weight: bold;
+    color: $light-yellow;
+
+    @media (max-width: 650px) {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    margin-bottom: 10px;
+  }
+}
+
+.desc__list {
+  @include reset-list;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 650px) {
+    gap: 10px;
+  }
+}
+
+.desc__item {
+  max-width: 360px;
+  background: #ffffff;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding-left: 140px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 140px;
+
+  &::before {
+    position: absolute;
+  }
+
+  &:nth-child(1) {
+    &::before {
+      top: -4px;
+      left: -20px;
+      content: url('/src/img/gallery/desc/1.png');
+
+      @media (max-width: 650px) {
+        top: 33px;
+        zoom: 0.5;
+      }
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      top: -7px;
+      left: 0px;
+      content: url('/src/img/gallery/desc/2.png');
+
+      @media (max-width: 650px) {
+        zoom: 0.5;
+      }
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      bottom: -7px;
+      left: 0px;
+      content: url('/src/img/gallery/desc/3.png');
+
+      @media (max-width: 650px) {
+        zoom: 0.6;
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    min-height: auto;
+  }
+}
+
+.desc__item-text {
+  margin-bottom: 0px;
+  font-size: 14px;
+
+  span {
+    color: $light-yellow;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 14px !important;
+  }
+}
