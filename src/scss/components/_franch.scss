@@ -1,0 +1,59 @@
+.franch {
+  padding-top: 129px;
+  padding-bottom: 143px;
+  @include bg;
+  background-image: url('/src/img/bgs/franch-bg.jpg');
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 991px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.franch__title {
+  margin-bottom: 0;
+  @include title;
+  color: white;
+
+  @media (max-width: 800px) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.franch__subtitle {
+  @include title;
+  font-weight: normal;
+  margin-bottom: 42px;
+  color: white;
+
+  @include mobile-mb(20px);
+
+  span {
+    background-color: $dark-yellow;
+  }
+}
+
+.franch__text {
+  max-width: 918px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 61px;
+  @include mobile-mb(30px);
+  font-size: 18px;
+}

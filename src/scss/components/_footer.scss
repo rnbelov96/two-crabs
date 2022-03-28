@@ -1,0 +1,156 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.footer__copy {
+  color: #909090;
+  font-size: 12px;
+  margin-bottom: 9px;
+
+  @media (max-width: 650px) {
+    font-size: 12px !important;
+  }
+}
+
+.footer__data {
+  color: #909090;
+  font-size: 12px;
+  margin-bottom: 13px;
+
+  @media (max-width: 650px) {
+    font-size: 12px !important;
+  }
+}
+
+.footer__address {
+  padding-left: 51px;
+  position: relative;
+  color: #909090;
+  font-size: 12px;
+  margin-bottom: 13px;
+  &::before {
+    content: '';
+    width: 37px;
+    height: 25px;
+    @include bg;
+    background-image: url('/src/img/icons/gerb.jpg');
+    @include y-align;
+    left: 0;
+    position: absolute;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 12px !important;
+  }
+}
+
+.footer__policy {
+  @include reset-btn;
+  color: #909090;
+  font-size: 12px;
+}
+
+.footer__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 14px;
+}
+
+.footer__social-link {
+  width: 26px;
+  height: 26px;
+  @include bg;
+
+  &:nth-child(1) {
+    background-image: url('/src/img/icons/insta.svg');
+  }
+  &:nth-child(2) {
+    background-image: url('/src/img/icons/vk.svg');
+  }
+}
+
+.footer__right-side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.footer__contact-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__phone {
+  @include reset-link(#403a3a);
+  font-weight: bold;
+  margin-bottom: 4px;
+  position: relative;
+  font-size: 20px;
+  color: #403a3a;
+
+  &:hover {
+    &::before {
+      transform: rotate(36deg);
+    }
+  }
+
+  &::before {
+    content: url('/src/img/icons/phone.svg');
+    left: -30px;
+    top: 3px;
+    position: absolute;
+    transition: transform 0.5s;
+  }
+}
+
+.footer__callback {
+  @include reset-btn;
+  color: $dark-yellow;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.footer__f5 {
+  @include reset-link(#403a3a);
+  padding-left: 55px;
+  font-size: 12px;
+  position: relative;
+  color: #403a3a;
+
+  &::before {
+    left: 0px;
+    width: 38px;
+    height: 38px;
+    @include bg;
+    background-image: url('/src/img/icons/f5.png');
+    content: '';
+    position: absolute;
+    @include y-align;
+  }
+}
