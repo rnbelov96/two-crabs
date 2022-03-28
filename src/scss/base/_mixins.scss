@@ -96,7 +96,25 @@
   }
 
   @media (max-width: 650px) {
-    font-size: 19px !important;
+    font-size: 20px !important;
+  }
+}
+
+@mixin subtitle {
+  font-size: 34px;
+  color: $dark-yellow;
+  text-align: center;
+
+  @media (max-width: 1150px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
   }
 }
 

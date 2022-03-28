@@ -1,0 +1,128 @@
+.delivery {
+  padding-bottom: 143px;
+
+  @media (max-width: 991px) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: 650px) {
+    padding-bottom: 30px;
+  }
+}
+
+.delivery__wrapper {
+  max-width: 868px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.delivery__content {
+  max-width: 517px;
+  margin-left: auto;
+
+  @media (max-width: 790px) {
+    margin-left: 0;
+  }
+}
+
+.delivery__title {
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: normal;
+
+  @include mobile-mb(20px);
+
+  span {
+    color: white;
+    background-color: $dark-yellow;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 18px !important;
+  }
+}
+
+.delivery__list-title {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.delivery__list {
+  @include reset-list;
+  display: flex;
+  gap: 140px;
+  margin-bottom: 50px;
+
+  @media (max-width: 650px) {
+    gap: 17px;
+  }
+
+  @include tablet-mb(40px);
+  @include mobile-mb(25px);
+}
+
+.delivery__item-number {
+  font-size: 40px;
+  color: $light-yellow;
+  margin-bottom: 0;
+}
+
+.delivery__item-text {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #909090;
+
+  @media (max-width: 650px) {
+    font-size: 14px !important;
+  }
+}
+
+.delivery__note-wrapper {
+  position: relative;
+  &::after {
+    content: '';
+    width: 649px;
+    aspect-ratio: 649/428;
+    position: absolute;
+    z-index: -1;
+    top: -313px;
+    left: -435px;
+    @include bg;
+    background-image: url('/src/img/models-auto.png');
+
+    @media (max-width: 790px) {
+      position: relative;
+      display: block;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+.delivery__note {
+  padding-left: 67px;
+  padding-right: 67px;
+  padding-top: 51px;
+  padding-bottom: 51px;
+  @include bg;
+  background-image: url('/src/img/models-note-bg.png');
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 10px;
+  position: relative;
+
+  @media (max-width: 650px) {
+    font-size: 18px !important;
+    padding: 20px;
+  }
+}

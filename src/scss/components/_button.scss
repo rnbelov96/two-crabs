@@ -32,6 +32,20 @@
     max-width: 310px;
   }
 
+  &_shop {
+    max-width: 270px;
+  }
+
+  &_support {
+    max-width: 270px;
+
+    @media (max-width: 880px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   &:hover {
     background: linear-gradient(180deg, #c0f0ff 0%, #30a8ff 100%);
   }

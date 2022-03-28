@@ -4,7 +4,6 @@
   border-radius: 10px;
   width: 1200px;
   position: relative;
-  top: 84px;
 
   @media (max-width: 1220px) {
     width: 100%;
@@ -15,8 +14,45 @@
   }
 
   &_desc {
+    top: 84px;
     @media (max-width: 650px) {
       display: none;
+    }
+  }
+
+  &_steps {
+    top: 406px;
+    position: relative;
+
+    &::before {
+      content: url('/src/img/steps-ball-left.png');
+      position: absolute;
+      left: -730px;
+      top: -679px;
+      z-index: -1;
+
+      @media (max-width: 1260px) {
+        content: none;
+      }
+    }
+    &::after {
+      content: url('/src/img/steps-ball-right.png');
+      position: absolute;
+      right: -760px;
+      top: -750px;
+      z-index: -1;
+
+      @media (max-width: 1260px) {
+        content: none;
+      }
+    }
+  }
+
+  &_prop {
+    top: 100px;
+
+    @media (max-width: 650px) {
+      top: 30px;
     }
   }
 }

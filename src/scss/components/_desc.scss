@@ -2,6 +2,11 @@
   min-height: 940px;
   @include bg;
   background-image: url('/src/img/bgs/desc.jpg');
+
+  @media (max-width: 650px) {
+    min-height: auto;
+    padding-bottom: 30px;
+  }
 }
 
 .desc__title {
@@ -11,6 +16,7 @@
 
   @media (max-width: 650px) {
     margin-top: 10px;
+    font-size: 19px !important;
   }
 }
 

@@ -1,3 +1,116 @@
 .models {
-  
+  padding-top: 215px;
+  padding-bottom: 101px;
+
+  @media (max-width: 767px) {
+    padding-top: 150px;
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.models__title {
+  @include title;
+  margin-bottom: 6px;
+  max-width: 910px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.models__subtitle {
+  @include subtitle;
+  margin-bottom: 36px;
+  @include mobile-mb(20px);
+}
+
+.models__text {
+  text-align: center;
+  margin-bottom: 52px;
+
+  @include tablet-mb(40px);
+  @include mobile-mb(20px);
+}
+
+.models__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 48px;
+  @include mobile-mb(30px);
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.models__item {
+  &:nth-child(1) {
+    width: calc((420 / 1140) * 100%);
+
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+  }
+  &:nth-child(2) {
+    width: calc((690 / 1140) * 100%);
+
+    @media (max-width: 650px) {
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.models__note-box {
+  max-width: 590px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 434px;
+    aspect-ratio: 434/288;
+    position: absolute;
+    @include bg;
+    background-image: url('/src/img/models-fish.png');
+    right: -600px;
+    top: -31px;
+
+    @media (max-width: 1150px) {
+      right: -490px;
+    }
+
+    @media (max-width: 650px) {
+      right: 0;
+      top: 0;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+.models__note-title {
+  font-size: 26px;
+  margin-bottom: 31px;
+
+  span {
+    color: white;
+    background-color: $dark-yellow;
+  }
+
+  @include mobile-mb(20px);
+}
+
+.models__note-text {
+  margin-bottom: 0;
 }

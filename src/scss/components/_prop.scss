@@ -1,0 +1,149 @@
+.prop {
+  min-height: 1260px;
+  @include bg;
+  background-image: url('/src/img/bgs/prop-bg.jpg');
+  padding-top: 298px;
+  position: relative;
+  top: -167px;
+  margin-bottom: -167px;
+  z-index: 3;
+
+  @media (max-width: 1100px) {
+    min-height: auto;
+    top: 0;
+    margin-bottom: 0;
+    padding-top: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 30px;
+  }
+}
+
+.prop__title {
+  @include title;
+  margin-bottom: 6px;
+}
+
+.prop__subtitle {
+  @include subtitle;
+  margin-bottom: 43px;
+
+  @include mobile-mb(20px);
+}
+
+.prop__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 51px 124px;
+  margin-bottom: 274px;
+
+  @media (max-width: 1100px) {
+    gap: 20px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  @include mobile-mb(20px);
+}
+
+.prop__item {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    @include bg;
+    background-image: url('/src/img/prop-circle.svg');
+    position: absolute;
+    top: 5px;
+  }
+
+  &:nth-child(1) {
+    padding-right: 54px;
+    text-align: right;
+
+    &::before {
+      right: 0;
+    }
+  }
+  &:nth-child(2) {
+    padding-left: 54px;
+    text-align: left;
+
+    &::before {
+      left: 0;
+    }
+  }
+  &:nth-child(3) {
+    padding-right: 54px;
+    text-align: right;
+    left: -137px;
+
+    &::before {
+      right: 0;
+    }
+  }
+  &:nth-child(4) {
+    padding-left: 54px;
+    text-align: left;
+    left: 154px;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  span {
+    color: $dark-yellow;
+    font-weight: bold;
+  }
+
+  @media (max-width: 1100px) {
+    padding-left: 54px !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    @media (max-width: 650px) {
+      padding-left: 35px !important;
+    }
+
+    br {
+      display: none;
+    }
+
+    &::before {
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.prop__note {
+  max-width: 376px;
+  padding-top: 34px;
+  padding-bottom: 33px;
+  padding-left: 52px;
+  padding-right: 52px;
+  text-align: center;
+  color: white;
+  @include bg;
+  background-image: url('/src/img/prop-note-bg.png');
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+
+  @media (max-width: 1100px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 650px) {
+    padding: 20px;
+  }
+}

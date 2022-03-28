@@ -1,0 +1,20 @@
+.steps-bottom {
+  min-height: 688px;
+  @include bg;
+  background-image: url('/src/img/bgs/steps-bg-bottom.png');
+  padding-top: 39px;
+}
+
+.steps-bottom__text {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 0;
+  max-width: 906px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media (max-width: 650px) {
+    font-size: 20px !important;
+  }
+}

@@ -1,0 +1,147 @@
+.demand {
+  padding-top: 129px;
+  padding-bottom: 143px;
+  position: relative;
+  z-index: 4;
+
+  @media (max-width: 1200px) {
+    padding-bottom: 0;
+    padding-top: 100px;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 90px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 70px;
+  }
+
+  @media (max-width: 650px) {
+    padding-top: 30px;
+  }
+}
+
+.demand__bg {
+  position: absolute;
+  height: 100%;
+  width: 1334px;
+  background: #312783;
+  border-radius: 10px;
+  @include central-align;
+}
+
+.demand__content {
+  max-width: 590px;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+}
+
+.demand__title {
+  @include title;
+  color: white;
+  max-width: 590px;
+  margin-bottom: 6px;
+  text-align: left;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+}
+
+.demand__subtitle {
+  @include subtitle;
+  max-width: 527px;
+  color: $light-yellow;
+  margin-bottom: 36px;
+  text-align: left;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+
+  @include mobile-mb(20px);
+}
+
+.demand__text-box {
+  max-width: 549px;
+  margin-bottom: 19px;
+
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
+
+  & > * + * {
+    margin-top: 24px;
+
+    @include mobile-mb(20px);
+  }
+}
+
+.demand__text {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.demand__caption-box {
+  position: relative;
+  left: 331px;
+  max-width: 393px;
+
+  @media (max-width: 1200px) {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.demand__caption-text {
+  padding-left: 23px;
+  font-size: 16px;
+  color: white;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.demand__owners-img {
+  position: absolute;
+  right: -683px;
+  top: -145px;
+  z-index: -1;
+
+  @media (max-width: 1200px) {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: -155px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 650px) {
+    margin-top: -30px;
+  }
+}
+
+.demand__caption-names {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background: #5148a0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  @media (max-width: 650px) {
+    font-size: 14px !important;
+    text-align: center;
+  }
+}
