@@ -31,25 +31,27 @@
       <section class="desc">
         <div class="container">
           <header class="header">
-            <div class="header__left-side">
-              <img
-                src="./img/icons/logo.svg"
-                alt="Логотип"
-                width="112"
-                height="100"
-                class="header__logo"
-              />
-              <p class="header__text">
-                Магазин по продаже российских морепродуктов, рыбы и икры премиум
-                класса
-              </p>
-            </div>
-            <div class="header__contact-box">
-              <a href="tel:+79229646464" class="header__phone"
-                >8 (922) 964 64 64</a
-              ><button class="header__callback js-callback">
-                Заказать звонок
-              </button>
+            <div class="header__content">
+              <div class="header__left-side">
+                <img
+                  src="./img/icons/logo.svg"
+                  alt="Логотип"
+                  width="112"
+                  height="100"
+                  class="header__logo"
+                />
+                <p class="header__text">
+                  Магазин по продаже российских морепродуктов, рыбы и икры
+                  премиум класса
+                </p>
+              </div>
+              <div class="header__contact-box">
+                <a href="tel:+79229646464" class="header__phone"
+                  >8 (922) 964 64 64</a
+                ><button class="header__callback js-callback">
+                  Заказать звонок
+                </button>
+              </div>
             </div>
           </header>
 
@@ -99,7 +101,7 @@
                   <div class="line-form__input-box">
                     <input
                       type="tel"
-                      placeholder="+7 (999) 999 99 99"
+                      placeholder="+7 (___) ___ ____"
                       name="phone"
                       data-type="phone"
                       autocomplete="off"
@@ -297,7 +299,7 @@
                   <div class="line-form__input-box">
                     <input
                       type="tel"
-                      placeholder="+7 (999) 999 99 99"
+                      placeholder="+7 (___) ___ ____"
                       name="phone"
                       data-type="phone"
                       autocomplete="off"
@@ -688,7 +690,7 @@
                   <div class="line-form__input-box">
                     <input
                       type="tel"
-                      placeholder="+7 (999) 999 99 99"
+                      placeholder="+7 (___) ___ ____"
                       name="phone"
                       data-type="phone"
                       autocomplete="off"
@@ -953,7 +955,7 @@
                   <div class="line-form__input-box">
                     <input
                       type="tel"
-                      placeholder="+7 (999) 999 99 99"
+                      placeholder="+7 (___) ___ ____"
                       name="phone"
                       data-type="phone"
                       autocomplete="off"
@@ -1000,7 +1002,9 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__left-side">
-            <p class="footer__copy">© «Два Краба», 2020-<span class="js-year">2022</span> г.</p>
+            <p class="footer__copy">
+              © «Два Краба», 2020-<span class="js-year">2022</span> г.
+            </p>
             <p class="footer__data">
               ИП Луппова Оксана Борисовна <br />
               ИНН 432986174443
@@ -1045,18 +1049,64 @@
     <div class="modal">
       <div class="modal__center-wrapper">
         <form class="modal-form">
-          <h3 class="modal-form__title">
-            Оставьте заявку <span class="js-modal-form-title"></span>
-          </h3>
-          <button class="button button_modal-form js-modal-form-btn">
-            Получить документацию
-          </button>
-          <button
-            data-modal-close=""
-            class="modal__close"
-            title="Закрыть"
-            type="button"
-          ></button>
+          <div class="modal-form__wrapper">
+            <h3 class="modal-form__title">
+              <span class="js-modal-form-title">Получить подробную</span>
+            </h3>
+            <p class="modal-form__subtitle">
+              <span class="js-modal-form-subtitle"
+                >финансовую модель и презентацию франшизы
+              </span>
+            </p>
+            <div class="modal-form__content">
+              <div class="modal-form__input-container">
+                <div class="modal-form__input-box">
+                  <input
+                    type="tel"
+                    placeholder="+7 (___) ___ ____"
+                    name="phone"
+                    data-type="phone"
+                    autocomplete="off"
+                    class="modal-form__input"
+                  />
+                </div>
+                <div class="modal-form__input-box">
+                  <input
+                    type="email"
+                    placeholder="bestpartner@mail.ru"
+                    name="email"
+                    data-type="email"
+                    autocomplete="off"
+                    class="modal-form__input"
+                  />
+                </div>
+                <div class="modal-form__input-box">
+                  <input
+                    type="text"
+                    placeholder="Михаил Иванов"
+                    name="name"
+                    data-type="name"
+                    autocomplete="off"
+                    class="modal-form__input"
+                  />
+                </div>
+              </div>
+              <button class="button button_modal-form js-modal-form-btn">
+                Получить ПРЕЗЕНТАЦИЮ
+              </button>
+            </div>
+            <p class="modal-form__policy">
+              Я подтверждаю, что ознакомлен и даю согласие на обработку
+              персональных данных на условиях и для целей, определяемых
+              <span class="js-policy">Политикой конфиденциальности</span>
+            </p>
+            <!-- <button
+              data-modal-close=""
+              class="modal__close"
+              title="Закрыть"
+              type="button"
+            ></button> -->
+          </div>
         </form>
       </div>
     </div>

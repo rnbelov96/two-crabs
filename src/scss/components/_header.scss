@@ -1,12 +1,25 @@
 .header {
   padding-top: 19px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @media (max-width: 650px) {
     padding-top: 8px;
   }
+
+  &_thanks {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+
+    @media (max-width: 650px) {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__left-side {
