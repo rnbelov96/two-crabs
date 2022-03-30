@@ -193,9 +193,6 @@
       @include bg;
 
       &:nth-child(1) {
-        background-image: url('/src/img/icons/insta.svg');
-      }
-      &:nth-child(2) {
         background-image: url('/src/img/icons/vk.svg');
       }
     }

@@ -41,6 +41,7 @@
       right: -760px;
       top: -750px;
       z-index: -1;
+      pointer-events: none;
 
       @media (max-width: 1260px) {
         content: none;
