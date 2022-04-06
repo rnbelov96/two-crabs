@@ -86,13 +86,13 @@
   &::after {
     content: '';
     width: 649px;
-    aspect-ratio: 649/428;
+    aspect-ratio: 2048/1546;
     position: absolute;
     z-index: -1;
     top: -313px;
     left: -435px;
     @include bg;
-    background-image: url('/src/img/models-auto.png');
+    background-image: url('/src/img/models-auto-2.webp');
 
     @media (max-width: 790px) {
       position: relative;
